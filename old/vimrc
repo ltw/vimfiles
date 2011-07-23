@@ -1,0 +1,175 @@
+filetype off " Turn filetype detection off because it interferes with pathogen (Debian turns ft on by default)
+colorscheme twilight_lucas256
+
+" VUNDLE
+"-------------------------------------------------
+set rtp+=~/.vim/vundle/
+call vundle#rc()
+
+Bundle 'rails.vim'
+Bundle 'ack.vim'
+Bundle 'Color-Sampler-Pack'
+Bundle 'scrooloose/nerdtree'
+Bundle 'The-NERD-Commenter'
+Bundle 'snipMate'
+Bundle 'vim-cucumber'
+Bundle 'bufexplorer.zip'
+Bundle 'trailing-whitespace'
+Bundle 'upAndDown'
+Bundle 'Syntastic'
+Bundle 'vimwiki'
+Bundle 'Bookmarking'
+Bundle 'bufkill.vim'
+Bundle 'ScrollColors'
+Bundle 'Align'
+Bundle 'fugitive.vim'
+Bundle 'git://github.com/robgleeson/vim-markdown-preview.git'
+Bundle 'git://github.com/nathanaelkane/snipmate-snippets.git'
+Bundle 'git://github.com/nathanaelkane/vim-indent-guides.git'
+Bundle 'Command-T'
+Bundle 'git://github.com/jkramer/vim-checkbox.git'
+Bundle 'haml.zip'
+Bundle 'CSApprox'
+Bundle 'git://github.com/nathanaelkane/vim-closer.git'
+Bundle 'git://github.com/blueyed/vim-rooter.git'
+Bundle 'Lokaltog/vim-easymotion'
+
+" MISC
+"-------------------------------------------------
+syntax on                                  " Turn on syntax highlighting
+let mapleader = ","                        " Remap leader to ',' which is much easier than '\'
+filetype plugin indent on                  " Enable automatic filetype detection, filetype-specific plugins/indentation
+set nocompatible                           " Don't need to keep compatibility with Vi
+set hidden                                 " Allow hiding buffers with unsaved changes
+set listchars=trail:.,tab:>-,eol:$         " Change the invisible characters
+set nolist                                 " Hide invisibles by default
+set showcmd                                " Show incomplete cmds down the bottom
+set showmode                               " Show current mode down the bottom
+set cmdheight=2                            " Make the command line a little taller
+set ttyfast                                " More smooth screen redrawing
+set incsearch                              " Find the next match as we type the search
+set hlsearch                               " Highlight searches by default
+set ruler                                  " Show ruler
+set number                                 " Show line numbers
+set vb t_vb=                               " Turn off bell
+set mouse=a                                " Enable the mouse
+set linespace=3                            " Spacing between lines
+set noswapfile                             " Disable creation of *.swp files
+set t_Co=256                               " Support for xterm with 256 colors (gets overriden in .gvimrc)
+
+" INDENTATION
+"-------------------------------------------------
+set shiftwidth=2                           " Number of spaces to use in each autoindent step
+set tabstop=2                              " Two tab spaces
+set softtabstop=2                          " Number of spaces to skip or insert when <BS>ing or <Tab>ing
+set expandtab                              " Spaces instead of tabs for better cross-editor compatibility
+set autoindent                             " Keep the indent when creating a new line
+set smarttab                               " Use shiftwidth and softtabstop to insert or delete (on <BS>) blanks
+set cindent                                " Recommended seting for automatic C-style indentation
+set autoindent                             " Automatic indentation in non-C files
+
+" WRAP
+"-------------------------------------------------
+set nowrap                                 " Dont wrap lines
+set wildmenu                               " Make tab completion act more like bash
+set wildmode=list:longest                  " Tab complete to longest common string, like bash
+set switchbuf=useopen                      " Don't re-open already opened buffers
+
+" MOVING AROUND / EDITING
+"-------------------------------------------------
+set nostartofline                          " Avoid moving cursor to BOL when jumping around
+set scrolloff=3                            " Keep 3 context lines above and below the cursor
+set backspace=2                            " Allow backspacing over autoindent, EOL, and BOL
+set showmatch                              " Briefly jump to a paren once it's balanced
+set matchtime=2                            " (for only .2 seconds).
+
+" FILETYPES
+"-------------------------------------------------
+augroup MyFileTypes
+  " Clear old autocmds in group
+  autocmd!
+
+  " Autoindent with two spaces, always expand tabs
+  autocmd FileType ruby,rails,haml,eruby,yaml,ru,cucumber set ai sw=2 sts=2 et
+augroup END
+
+" MAKE TABS WORK LIKE WE'RE USED TO
+"-------------------------------------------------
+map <C-Tab> :tabnext<CR>
+map <C-S-Tab> :tabprev<CR>
+
+" SHOW NERDTREE WITH LINE NUMBERS FOR EASIER NAVIGATION
+"-------------------------------------------------
+map <leader>n :NERDTreeToggle<CR>
+map <leader>N :NERDTreeFind<CR>
+let g:NERDTreeShowLineNumbers = 1
+let g:NERDTreeHijackNetrw     = 0
+let g:loaded_netrw            = 1 " Disable netrw
+let g:loaded_netrwPlugin      = 1 " Disable netrw
+let g:NERDTreeMinimalUI       = 1
+let g:NERDTreeDirArrows       = 1
+
+" BUFFER NAVIGATION
+"-------------------------------------------------
+map <leader>, <C-^>
+map <leader>] :bnext<CR>
+map <leader>[ :bprev<CR>
+map <leader>ls :buffers<CR>
+
+" QUICKLY OPEN/SOURCE (.vimrc/.gvimrc)
+"-------------------------------------------------
+nmap <leader>vv :e $HOME/.vimrc<CR>
+nmap <leader>gg :e $HOME/.gvimrc<CR>
+nmap <leader>ss :source $HOME/.vimrc<Bar>:source $HOME/.gvimrc<CR>
+nmap <leader>sv :source $HOME/.vimrc<CR>
+
+" TOGGLE SHOW INVISIBLES
+"-------------------------------------------------
+noremap <leader>i :set list!<CR>
+
+" TRIM AND SAVE
+"-------------------------------------------------
+map <leader>sd :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<Bar>:w<CR>
+
+" MOVEMENT & WRAPPED LONG LINES
+" - This solves the problem that pressing down jumps your cursor 'over' the current line to the next line
+"-------------------------------------------------
+nnoremap j gj
+nnoremap k gk
+
+" EASY WINDOW NAVIGATION
+"-------------------------------------------------
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" REMOVE ANNOYING F1 HELP
+"-------------------------------------------------
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" RESELECT VISUAL BLOCK AFTER IN/DEDENT
+"-------------------------------------------------
+vnoremap < <gv
+vnoremap > >gv
+
+" SYNTASTIC SETTINGS
+"-------------------------------------------------
+let g:syntastic_enable_signs  = 1
+let g:syntastic_auto_loc_list = 0
+
+" JASON MAKING LIFE HARD - FUCK, JASON!
+"-------------------------------------------------
+vmap <silent><Bar> :Align <Bar><CR>gv:S/\s\+$//e<CR>gv:S/^\s//e<CR>gv<Esc>
+autocmd FileType nerdtree map <buffer> <S-CR> go
+
+" CODE FOLDING - FUCK, JASON!
+"-------------------------------------------------
+set foldmethod=syntax                      " Automatically fold based on syntax
+set foldlevelstart=99											 " Expand all folds by default
+
+" EASYMOTION
+"-------------------------------------------------
+let g:EasyMotion_leader_key = '<Leader>e'
