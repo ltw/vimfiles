@@ -6,6 +6,7 @@ let g:loaded_netrw            = 1 " Disable netrw
 let g:loaded_netrwPlugin      = 1 " Disable netrw
 let g:NERDTreeMinimalUI       = 1
 let g:NERDTreeDirArrows       = 1
+let g:NERDTreeWinSize         = 51
 let g:NERDTreeWinPos          = 'right'
 
 " SYNTASTIC
