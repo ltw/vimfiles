@@ -19,7 +19,7 @@ endif
 "-------------------------------------------------
 let g:CommandTMaxFiles = 20000
 let g:CommandTMaxHeight = 10
-let g:CommandTMatchWindowAtTop = 1
+let g:CommandTMatchWindowAtTop = 0
 
 " INDENT GUIDES
 "-------------------------------------------------
