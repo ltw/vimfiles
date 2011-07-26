@@ -36,8 +36,8 @@ imap <D-T> <Esc>:call CommandTWithFlush()<CR>
 
 " Stop Cmd+W from closing window
 macmenu &File.Close key=<nop>
-nmap <D-w> :Closer<CR>
-imap <D-w> <Esc>:Closer<CR>
+nmap <D-w> :CommandW<CR>
+imap <D-w> <Esc>:CommandW<CR>
 
 " Cmd+F for Ack
 macmenu &Edit.Find.Find\.\.\. key=<nop>
