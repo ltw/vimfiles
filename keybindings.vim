@@ -74,3 +74,6 @@ map <Leader>f :Ack<Space>
 " Cycle between windows with Tab and Shift-Tab
 map <silent><Tab> :wincmd w<CR>
 map <silent><S-Tab> :wincmd W<CR>
+
+" Quick-quit quickfix window
+nmap <silent><Leader>q :cclose<CR>
