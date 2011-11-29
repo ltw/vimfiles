@@ -1,4 +1,4 @@
-set guifont=Inconsolata:h16
+set guifont=Menlo:h15
 
 " FULLSCREEN
 "-------------------------------------------------
