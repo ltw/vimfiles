@@ -1,5 +1,6 @@
 let g:indent_guides_auto_colors = 1
 colorscheme twilight_lucas
+set background=dark
 
 " GVIM
 "-------------------------------------------------
