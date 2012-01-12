@@ -11,7 +11,7 @@ set transparency=1
 
 " HIDE TOOLBAR
 "-------------------------------------------------
-set guioptions=egmrt
+set guioptions=egmrtc
 
 " COLOUR COLUMNS
 "-------------------------------------------------
