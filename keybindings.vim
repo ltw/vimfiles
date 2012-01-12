@@ -21,6 +21,10 @@ nmap <Leader>gg :e $HOME/.gvimrc<CR>
 nmap <Leader>ss :source $HOME/.vimrc<Bar>:source $HOME/.gvimrc<CR>
 nmap <leader>sv :source $HOME/.vimrc<CR>
 
+" TCCOMMENT
+"-------------------------------------------------
+let g:tcommentMapLeaderOp1 = '<Leader>c'
+
 " TOGGLE SHOW INVISIBLES
 "-------------------------------------------------
 noremap <leader>i :set list!<CR>
