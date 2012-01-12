@@ -78,3 +78,6 @@ set laststatus=2
 
 " Save on FocusLost
 au FocusLost * :silent! wall
+
+" Use % to jump to matching begin/end of blocks as well as brackets/parens
+runtime macros/matchit.vim

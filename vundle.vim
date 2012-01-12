@@ -17,6 +17,8 @@ Bundle 'upAndDown'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'nanotech/jellybeans.vim'
 
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'rails.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'airblade/vim-rooter'
