@@ -22,7 +22,6 @@ Bundle 'tpope/vim-haml'
 Bundle 'airblade/vim-rooter'
 Bundle 'jkramer/vim-checkbox'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'ciaranm/detectindent'
 Bundle 'Syntastic'
 Bundle 'vim-cucumber'
 
