@@ -15,6 +15,7 @@ Bundle 'bufexplorer.zip'
 Bundle 'bufkill.vim'
 Bundle 'upAndDown'
 Bundle 'tomtom/tcomment_vim'
+Bundle 'nanotech/jellybeans.vim'
 
 Bundle 'rails.vim'
 Bundle 'tpope/vim-haml'

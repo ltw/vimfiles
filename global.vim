@@ -69,10 +69,7 @@ set smartcase                              " Switch to case sensitive mode if ne
 
 " DEFAULT COLOURS FOR VIM - GVIMRC OVERRIDES THIS
 "-------------------------------------------------
-colorscheme twilight_lucas256
-let g:indent_guides_auto_colors = 0
-hi IndentGuidesOdd  guibg=#121212 ctermbg=233
-hi IndentGuidesEven guibg=#1c1c1c ctermbg=234
+colorscheme jellybeans-lucas
 
 " CUSTOM STATUS LINE
 "-------------------------------------------------
