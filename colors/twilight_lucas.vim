@@ -26,7 +26,7 @@ let s:lightgrey = '#605958'
 let s:white = '#fffedc'
 
 if version >= 700
-  hi CursorLine guibg=#262626
+  hi CursorLine guibg=#202020
   hi CursorColumn guibg=#262626
   hi MatchParen guifg=white guibg=#80a090 gui=bold
 
