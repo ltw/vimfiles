@@ -23,7 +23,7 @@ Bundle 'airblade/vim-rooter'
 Bundle 'jkramer/vim-checkbox'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'Syntastic'
-Bundle 'vim-cucumber'
+Bundle 'tpope/vim-cucumber'
 
 Bundle 'CSApprox'
 Bundle 'vimwiki'
