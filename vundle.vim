@@ -19,6 +19,7 @@ Bundle 'nanotech/jellybeans.vim'
 
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'nelstrom/vim-mac-classic-theme'
 Bundle 'rails.vim'
 Bundle 'tpope/vim-haml'
 Bundle 'airblade/vim-rooter'
