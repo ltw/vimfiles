@@ -61,7 +61,7 @@ map <C-l> <C-w>l
 vmap <silent><Bar> :Align <Bar><CR>gv:S/\s\+$//e<CR>gv:S/^\s//e<CR>gv<Esc>
 
 " Convert between spaces and tabs
-map <Leader>I :set list<CR>:FixWhitespace<CR>:ToggleTabs<CR>
+map <Leader>I :set list<CR>:FixWhitespace<CR>
 
 " Clear search
 map <silent><Leader>/ :nohls<CR>
