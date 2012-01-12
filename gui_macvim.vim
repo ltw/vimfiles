@@ -46,4 +46,3 @@ imap <D-f> <Esc>:Ack<Space>
 
 menu File.Close\ Instance :qa<CR>
 inoremenu File.Close\ Instance :qa<CR>
-
