@@ -81,3 +81,6 @@ map <silent><S-Tab> :wincmd W<CR>
 
 " Quick-quit quickfix window
 nmap <silent><Leader>q :cclose<CR>
+
+" Copy relative path of current file to clipboard
+map <Leader>cf :let @*=expand('%')<CR>
