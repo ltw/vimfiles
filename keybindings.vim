@@ -78,7 +78,8 @@ map <Leader>W :set wrap!<CR>
 map <Leader>S :set spell!<CR>
 
 " Ack
-map <Leader>f :Ack<Space>
+nmap <Leader>f :Ack!<Space>
+nmap <Leader>F :AckFromSearch!<CR>
 
 " Cycle between windows with Tab and Shift-Tab
 map <silent><Tab> :wincmd w<CR>
