@@ -93,3 +93,9 @@ nnoremap <silent><Leader>cf :let @*=expand('%')<CR>
 
 " Copy relative path and line number to the system pasteboard
 nnoremap <silent><Leader>cF :let @*=expand('%').':'.line('.')<CR>
+
+" CtrlP
+let g:ctrlp_map = '<Leader>t'
+map <Leader>l :CtrlPBuffer<CR>
+map <Leader>m :CtrlPMRUFiles<CR>
+map <Leader>T :CtrlPClearAllCaches<CR>:CtrlP<CR>
