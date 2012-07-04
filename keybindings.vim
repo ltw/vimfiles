@@ -45,7 +45,7 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-" RESELECT VISUAL BLOCK AFTER IN/DEDENT
+" RESELECT VISUAL BLOCK AFTER IN/OUTDENT
 "-------------------------------------------------
 vnoremap < <gv
 vnoremap > >gv
