@@ -59,7 +59,7 @@ set undoreload=10000
 
 " CODE FOLDING
 "-------------------------------------------------
-set foldmethod=syntax                      " Automatically fold based on syntax
+set foldmethod=indent                      " Automatically fold based on syntax
 set foldlevelstart=99											 " Expand all folds by default
 
 " SEARCHING
