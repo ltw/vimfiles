@@ -57,6 +57,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Highlight word at cursor without changing position
+nnoremap <Leader>h *<C-O>
+" Ack for word at cursor without changing position
+nnoremap <Leader>H *<C-O>:AckFromSearch!<CR>
+
 " Align selected Cucumber table with <Bar>
 vmap <silent><Bar> :Align <Bar><CR>gv:S/\s\+$//e<CR>gv:S/^\s//e<CR>gv<Esc>
 
