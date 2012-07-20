@@ -26,15 +26,3 @@ BundleInstall!
 BundleClean
 quit
 VIM
-
-(
-  builtin cd ~/.vim/bundle/Command-T/ruby/command-t
-  if type -t rvm > /dev/null
-  then
-    rvm system
-  fi
-  export PATH=/usr/bin:/bin:/usr/local/bin
-  ruby extconf.rb
-  make clean && make
-)
-
