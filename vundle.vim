@@ -6,6 +6,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'mileszs/ack.vim'
+Bundle 'tjennings/git-grep-vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'nathanaelkane/vim-command-w'
 Bundle 'scrooloose/nerdtree'
