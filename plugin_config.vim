@@ -55,4 +55,3 @@ let g:ctrlp_custom_ignore         = {
   \ 'file': '',
   \ 'link': '',
   \ }
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files --exclude-standard']
