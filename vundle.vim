@@ -19,6 +19,7 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'sjl/vitality.vim'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'elzr/vim-json'
 
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
