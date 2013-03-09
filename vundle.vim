@@ -21,6 +21,7 @@ Bundle 'sjl/vitality.vim'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'vim-scripts/paredit.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
+Bundle 'mozilla/rust', {'rtp': 'src/etc/vim'}
 Bundle 'elzr/vim-json'
 
 Bundle 'kana/vim-textobj-user'
