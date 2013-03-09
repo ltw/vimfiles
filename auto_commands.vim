@@ -9,9 +9,5 @@ endif
 "-------------------------------------------------
 autocmd BufRead,BufNewFile {*.md,*.mkd,*.markdown} setlocal ft=markdown wrap
 
-" Set color column for features
-autocmd BufWinEnter *.feature set cc+=11
-autocmd BufWinLeave *.feature set cc-=11
-
 " Map Shift-Enter to open a file in NERDTree without losing NERDTree focus
 autocmd FileType nerdtree map <buffer> <S-CR> go
