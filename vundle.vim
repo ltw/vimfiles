@@ -19,6 +19,7 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'sjl/vitality.vim'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'vim-scripts/paredit.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
 Bundle 'elzr/vim-json'
 
