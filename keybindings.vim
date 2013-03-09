@@ -99,3 +99,6 @@ let g:ctrlp_map = '<Leader>t'
 map <Leader>l :CtrlPBuffer<CR>
 map <Leader>m :CtrlPMRUFiles<CR>
 map <Leader>T :CtrlPClearAllCaches<CR>:CtrlP<CR>
+
+"Markdown bindings
+map <Leader>md :set textwidth=80 cc+=80<CR>
