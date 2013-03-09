@@ -17,34 +17,18 @@ if !has("gui")
   let g:loaded_syntastic_plugin = 0
 endif
 
-" COMMAND-T
-"-------------------------------------------------
-let g:CommandTMaxFiles = 20000
-let g:CommandTMaxHeight = 10
-let g:CommandTMatchWindowAtTop = 0
-
 " INDENT GUIDES
 "-------------------------------------------------
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_color_change_percent = 3
 let g:indent_guides_enable_on_vim_startup = 1
 
-" EASYMOTION
-"-------------------------------------------------
-let g:EasyMotion_leader_key = '<Leader>e'
-
-" NERD-COMMENTER
-"-------------------------------------------------
-let g:NERDSpaceDelims=1
-
 " QUICKFIXSIGNS
 "-------------------------------------------------
 let g:quickfixsigns_classes = ['vcsdiff']
 
-" Move rooter out of the way to make way for tcomment
-noremap <Leader>ro <Plug>RooterChangeToRootDirectory
-
-" CtrlP
+" CTRLP
+"-------------------------------------------------
 let g:ctrlp_clear_cache_on_exit   = 1
 let g:ctrlp_working_path_mode     = 0 " Handle working path manually
 let g:ctrlp_dotfiles              = 0 " Ignore all dot/hidden files
@@ -55,3 +39,6 @@ let g:ctrlp_custom_ignore         = {
   \ 'file': '',
   \ 'link': '',
   \ }
+
+" Move rooter out of the way to make way for tcomment
+noremap <Leader>ro <Plug>RooterChangeToRootDirectory
