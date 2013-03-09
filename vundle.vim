@@ -5,10 +5,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'mileszs/ack.vim'
 Bundle 'tjennings/git-grep-vim'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'nathanaelkane/vim-command-w'
 Bundle 'scrooloose/nerdtree'
 Bundle 'trailing-whitespace'
 Bundle 'kien/ctrlp.vim'
@@ -18,7 +16,6 @@ Bundle 'upAndDown'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'sjl/vitality.vim'
-Bundle 'vim-scripts/VimClojure'
 Bundle 'vim-scripts/paredit.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
 Bundle 'mozilla/rust', {'rtp': 'src/etc/vim'}
