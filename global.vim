@@ -67,6 +67,10 @@ set foldlevelstart=99											 " Expand all folds by default
 set ignorecase                             " Ignore case by default when searching
 set smartcase                              " Switch to case sensitive mode if needle contains uppercase characters
 
+" PASTEBOARD
+"-------------------------------------------------
+set clipboard=unnamed                      " requires compiling with +clipboard and vim version >=7.3 .. aka macvim
+
 " DEFAULT COLOURS FOR VIM - GVIMRC OVERRIDES THIS
 "-------------------------------------------------
 colorscheme jellybeans-lucas
