@@ -42,3 +42,5 @@ let g:ctrlp_custom_ignore         = {
 
 " Move rooter out of the way to make way for tcomment
 noremap <Leader>ro <Plug>RooterChangeToRootDirectory
+
+let g:clojure_special_indent_words = 'deftype,defrecord,reify,proxy,extend-type,extend-protocol,letfn,defconcerto'
