@@ -1,4 +1,4 @@
-set guifont=Menlo:h15
+set guifont=Source\ Code\ Pro:h15
 
 " Hide toolbar
 set guioptions=egmrtc
