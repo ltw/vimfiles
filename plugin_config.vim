@@ -11,11 +11,13 @@ let g:NERDTreeWinPos          = 'right'
 
 " SYNTASTIC
 "-------------------------------------------------
-let g:syntastic_enable_signs  = 1
-let g:syntastic_auto_loc_list = 0
-if !has("gui")
-  let g:loaded_syntastic_plugin = 0
-endif
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+let g:syntastic_haml_checkers = ['haml_lint']
+let g:syntastic_ruby_checkers = ['rubylint']
 
 " INDENT GUIDES
 "-------------------------------------------------
@@ -44,3 +46,6 @@ let g:ctrlp_custom_ignore         = {
 noremap <Leader>ro <Plug>RooterChangeToRootDirectory
 
 let g:clojure_special_indent_words = 'deftype,defrecord,reify,proxy,extend-type,extend-protocol,letfn,defconcerto'
+
+let g:rspec_runner = "os_x_iterm2"
+let g:rspec_command = "!bundle exec rspec -f d -c {spec}"

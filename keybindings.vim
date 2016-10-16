@@ -78,3 +78,16 @@ map <Leader>T :CtrlPClearAllCaches<CR>:CtrlP<CR>
 
 " Markdown bindings
 map <Leader>md :set textwidth=80 cc+=80<CR>
+
+" vim-rspec bindings
+map <Leader>rt :call RunCurrentSpecFile()<CR>
+map <Leader>rs :call RunNearestSpec()<CR>
+map <Leader>rl :call RunLastSpec()<CR>
+map <Leader>ra :call RunAllSpecs()<CR>
+
+" Toggle comments as invisible
+nmap <Leader>Ci :hi! link Comment Ignore<CR>
+nmap <Leader>Cc :hi! link Comment Comment<CR>
+
+" Run Syntastic check on current file
+nmap <silent><Leader>sc :SyntasticCheck<CR>
